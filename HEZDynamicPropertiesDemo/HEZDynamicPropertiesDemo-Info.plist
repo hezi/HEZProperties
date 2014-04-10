@@ -28,6 +28,28 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>HEZProperties</key>
+	<dict>
+		<key>Category 1</key>
+		<dict>
+			<key>Collection 1</key>
+			<dict>
+				<key>Value 2</key>
+				<dict>
+					<key>minimum</key>
+					<integer>0</integer>
+					<key>maximum</key>
+					<integer>20</integer>
+					<key>current</key>
+					<string>10</string>
+				</dict>
+				<key>Value 3</key>
+				<string>Value 3 Value as Text</string>
+				<key>Value 1</key>
+				<real>56.3</real>
+			</dict>
+		</dict>
+	</dict>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

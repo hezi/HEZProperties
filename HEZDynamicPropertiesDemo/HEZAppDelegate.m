@@ -16,7 +16,40 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    HEZProperty *value1 = HEZPropertyObject(@"Category 1", @"Collection 1", @"Value 1");
+    
+    [value1 addObserver:self];
+    [value1 setCurrentValue:@(456.2)];
+    
+    [[HEZPropertiesStore defaultStore] addEntriesFromDictionary:@{@"Category 1":@{
+                                                                    @"Collection 1":@{
+                                                                            @"Value 1":@(3444)
+                                                                            }
+                                                                    ,
+                                                                    @"Collection 2":@{
+                                                                            @"Value 333":@"STRING VALUE"
+                                                                                }
+                                                                    }
+                                                            }];
+    
+    HEZPropertyBind(self, name, @"Category 1", @"Collection 2", @"Value 333");
+    
+    HEZProperty *value222 = HEZPropertyObject(@"Category 1", @"Collection 2", @"Value 333");
+    [value222 setCurrentValue:@"NEW STRINGG!!!!"];
+
     return YES;
+}
+
+- (void)setName:(NSString *)name
+{
+    _name = name;
+    NSLog(@"NEW NAME: %@", name);
+}
+
+- (void)propertyDidChange:(HEZProperty *)property
+{
+    NSLog(@"PROPERTY CHANGE: %@ - %@", property.name, property.currentValue);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -27,7 +60,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 

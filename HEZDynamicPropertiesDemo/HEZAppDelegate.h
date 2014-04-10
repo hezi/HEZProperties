@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HEZProperties.h"
 
-@interface HEZAppDelegate : UIResponder <UIApplicationDelegate>
+@interface HEZAppDelegate : UIResponder <UIApplicationDelegate, HEZPropertyObserver>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, readwrite) NSString *name;
 
 @end

@@ -19,6 +19,11 @@
 		E764705C18F53A6200DECAA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E764704418F53A6200DECAA4 /* UIKit.framework */; };
 		E764706418F53A6200DECAA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E764706218F53A6200DECAA4 /* InfoPlist.strings */; };
 		E764706618F53A6200DECAA4 /* HEZDynamicPropertiesDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E764706518F53A6200DECAA4 /* HEZDynamicPropertiesDemoTests.m */; };
+		E764707118F53B2300DECAA4 /* HEZPropertiesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E764707018F53B2300DECAA4 /* HEZPropertiesStore.m */; };
+		E764707418F53B3900DECAA4 /* HEZPropertiesCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E764707318F53B3900DECAA4 /* HEZPropertiesCategory.m */; };
+		E764707718F53BAF00DECAA4 /* HEZPropertiesCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = E764707618F53BAF00DECAA4 /* HEZPropertiesCollection.m */; };
+		E764707A18F53BCD00DECAA4 /* HEZProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = E764707918F53BCD00DECAA4 /* HEZProperty.m */; };
+		E764708018F5767700DECAA4 /* HEZPropertyBindObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E764707F18F5767700DECAA4 /* HEZPropertyBindObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,17 @@
 		E764706118F53A6200DECAA4 /* HEZDynamicPropertiesDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HEZDynamicPropertiesDemoTests-Info.plist"; sourceTree = "<group>"; };
 		E764706318F53A6200DECAA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E764706518F53A6200DECAA4 /* HEZDynamicPropertiesDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HEZDynamicPropertiesDemoTests.m; sourceTree = "<group>"; };
+		E764706F18F53B2300DECAA4 /* HEZPropertiesStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HEZPropertiesStore.h; path = HEZDynamicProperties/HEZPropertiesStore.h; sourceTree = "<group>"; };
+		E764707018F53B2300DECAA4 /* HEZPropertiesStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HEZPropertiesStore.m; path = HEZDynamicProperties/HEZPropertiesStore.m; sourceTree = "<group>"; };
+		E764707218F53B3900DECAA4 /* HEZPropertiesCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HEZPropertiesCategory.h; path = HEZDynamicProperties/HEZPropertiesCategory.h; sourceTree = "<group>"; };
+		E764707318F53B3900DECAA4 /* HEZPropertiesCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HEZPropertiesCategory.m; path = HEZDynamicProperties/HEZPropertiesCategory.m; sourceTree = "<group>"; };
+		E764707518F53BAF00DECAA4 /* HEZPropertiesCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HEZPropertiesCollection.h; path = HEZDynamicProperties/HEZPropertiesCollection.h; sourceTree = "<group>"; };
+		E764707618F53BAF00DECAA4 /* HEZPropertiesCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HEZPropertiesCollection.m; path = HEZDynamicProperties/HEZPropertiesCollection.m; sourceTree = "<group>"; };
+		E764707818F53BCC00DECAA4 /* HEZProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HEZProperty.h; path = HEZDynamicProperties/HEZProperty.h; sourceTree = "<group>"; };
+		E764707918F53BCD00DECAA4 /* HEZProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HEZProperty.m; path = HEZDynamicProperties/HEZProperty.m; sourceTree = "<group>"; };
+		E764707D18F56A4000DECAA4 /* HEZProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HEZProperties.h; path = HEZDynamicProperties/HEZProperties.h; sourceTree = "<group>"; };
+		E764707E18F5767700DECAA4 /* HEZPropertyBindObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HEZPropertyBindObserver.h; path = HEZDynamicProperties/HEZPropertyBindObserver.h; sourceTree = "<group>"; };
+		E764707F18F5767700DECAA4 /* HEZPropertyBindObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HEZPropertyBindObserver.m; path = HEZDynamicProperties/HEZPropertyBindObserver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +127,17 @@
 				E764705018F53A6200DECAA4 /* HEZAppDelegate.m */,
 				E764705218F53A6200DECAA4 /* Images.xcassets */,
 				E764704718F53A6200DECAA4 /* Supporting Files */,
+				E764707D18F56A4000DECAA4 /* HEZProperties.h */,
+				E764706F18F53B2300DECAA4 /* HEZPropertiesStore.h */,
+				E764707018F53B2300DECAA4 /* HEZPropertiesStore.m */,
+				E764707218F53B3900DECAA4 /* HEZPropertiesCategory.h */,
+				E764707318F53B3900DECAA4 /* HEZPropertiesCategory.m */,
+				E764707518F53BAF00DECAA4 /* HEZPropertiesCollection.h */,
+				E764707618F53BAF00DECAA4 /* HEZPropertiesCollection.m */,
+				E764707818F53BCC00DECAA4 /* HEZProperty.h */,
+				E764707918F53BCD00DECAA4 /* HEZProperty.m */,
+				E764707E18F5767700DECAA4 /* HEZPropertyBindObserver.h */,
+				E764707F18F5767700DECAA4 /* HEZPropertyBindObserver.m */,
 			);
 			path = HEZDynamicPropertiesDemo;
 			sourceTree = "<group>";
@@ -240,7 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E764707418F53B3900DECAA4 /* HEZPropertiesCategory.m in Sources */,
 				E764705118F53A6200DECAA4 /* HEZAppDelegate.m in Sources */,
+				E764707A18F53BCD00DECAA4 /* HEZProperty.m in Sources */,
+				E764708018F5767700DECAA4 /* HEZPropertyBindObserver.m in Sources */,
+				E764707718F53BAF00DECAA4 /* HEZPropertiesCollection.m in Sources */,
+				E764707118F53B2300DECAA4 /* HEZPropertiesStore.m in Sources */,
 				E764704D18F53A6200DECAA4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
