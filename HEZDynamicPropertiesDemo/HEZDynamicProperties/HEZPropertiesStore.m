@@ -17,8 +17,13 @@
     static HEZPropertiesStore *store;
     dispatch_once(&once, ^ {
         store = [[HEZPropertiesStore alloc] init];
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
-        [store addEntriesFromDictionary:[NSDictionary dictionaryWithContentsOfFile:path][@"HEZProperties"]];
+        
+        NSString *infoPath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
+        NSString *defaultPath = [[NSBundle mainBundle] pathForResource:@"defaultProperties" ofType:@"plist"];
+        NSDictionary *defaultProperties = [NSDictionary dictionaryWithContentsOfFile:infoPath][@"HEZProperties"] ?: [NSDictionary dictionaryWithContentsOfFile:defaultPath];
+        
+        [store addEntriesFromDictionary:defaultProperties];
+        
     });
     return store;
 }
