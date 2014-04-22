@@ -20,7 +20,7 @@
         
         NSString *infoPath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
         NSString *defaultPath = [[NSBundle mainBundle] pathForResource:@"defaultProperties" ofType:@"plist"];
-        NSDictionary *defaultProperties = [NSDictionary dictionaryWithContentsOfFile:infoPath][@"HEZProperties"] ?: [NSDictionary dictionaryWithContentsOfFile:defaultPath];
+        NSDictionary *defaultProperties = [NSDictionary dictionaryWithContentsOfFile:infoPath][@"defaultProperties"] ?: [NSDictionary dictionaryWithContentsOfFile:defaultPath];
         
         [store addEntriesFromDictionary:defaultProperties];
         

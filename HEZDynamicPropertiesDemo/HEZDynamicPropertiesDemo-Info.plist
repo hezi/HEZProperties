@@ -28,7 +28,7 @@
 	<array>
 		<string>armv7</string>
 	</array>
-	<key>HEZProperties</key>
+	<key>defaultProperties</key>
 	<dict>
 		<key>Category 1</key>
 		<dict>
