@@ -33,8 +33,10 @@
         HEZPropertiesCollection *collection = _collections[collectionName] ?: [HEZPropertiesCollection collectionFromDictionary:aDictionary[collectionName]];
         
         if(!_collections[collectionName]) {
-            [collection setName:collectionName];
-            [_collections setObject:collection forKey:collectionName];
+            if(collection){
+                [collection setName:collectionName];
+                [_collections setObject:collection forKey:collectionName];
+            }
         }
         else
             [collection loadFromDictionary:aDictionary[collectionName]];

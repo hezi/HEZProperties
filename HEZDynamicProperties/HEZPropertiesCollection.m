@@ -20,8 +20,12 @@
 {
     self = [super init];
     if (self) {
-        _values = [[NSMutableDictionary alloc] init];
-        [self loadFromDictionary:aDictionary];
+        if([aDictionary isKindOfClass:[NSDictionary class]]){
+            _values = [[NSMutableDictionary alloc] init];
+            [self loadFromDictionary:aDictionary];
+        }
+        else
+            return nil;
     }
     return self;
 }
@@ -32,7 +36,7 @@
     {
         id propertyValue = aDictionary[propertyName];
         HEZProperty *property = _values[propertyName] ?: [[HEZProperty alloc] initWithName:propertyName];
-
+        
         if(![propertyValue isMemberOfClass:[NSDictionary class]])
         {
             [property setCurrentValue:propertyValue];
