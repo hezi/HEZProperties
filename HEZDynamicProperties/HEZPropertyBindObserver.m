@@ -19,8 +19,8 @@
 {
     self = [super init];
     if (self) {
-        NSAssert(property != nil, @"property is required");
-        NSAssert(block != NULL, @"block is required");
+        if(!property)
+            return nil;
         
         _property = property;
         _block = block;

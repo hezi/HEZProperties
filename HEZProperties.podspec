@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "HEZProperties"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Adjustable parameters for iOS apps"
 
   s.description  = <<-DESC
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.author             = { "Hezi Cohen" => "hezi.co@gmail.com" }
   s.platform     = :ios
   s.ios.deployment_target = "7.0"
-  s.source       = { :git => "https://github.com/hezi/HEZProperties.git", :tag => "0.0.3"}
+  s.source       = { :git => "https://github.com/hezi/HEZProperties.git", :tag => "0.0.4"}
   s.source_files  = "HEZDynamicProperties/**/*.{h,m}"
   s.requires_arc = true
 end
