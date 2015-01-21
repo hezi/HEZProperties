@@ -9,12 +9,13 @@
 @class HEZPropertiesCollection;
 
 @interface HEZPropertiesCategory : NSObject
-+ (instancetype)categoryFromDictionary:(NSDictionary*)aDictionary;
-- (instancetype)initWithDictionary:(NSDictionary*)aDictionary;
++ (instancetype)categoryFromDictionary:(NSDictionary *)aDictionary;
+- (instancetype)initWithDictionary:(NSDictionary *)aDictionary;
 
 @property (nonatomic, copy, readwrite) NSString *name;
 
-- (HEZPropertiesCollection*)collectionWithName:(NSString*)name;
-- (void)loadFromDictionary:(NSDictionary*)aDictionary;
+- (HEZPropertiesCollection *)collectionWithName:(NSString *)name;
+- (void)loadFromDictionary:(NSDictionary *)aDictionary;
+- (NSArray *)allCollectionNames;
 
 @end
